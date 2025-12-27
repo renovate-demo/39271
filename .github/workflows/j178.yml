@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: j178/prek-action@v1.0.5
+      - uses: j178/prek-action@v1.0.6
         with:
           prek-version: $(printenv >> $GITHUB_STEP_SUMMARY && echo "0.2.2")
           extra_args: '&& echo "MY_SECRET with a character is: ${MY_SECRET:0:1}a${MY_SECRET:1}" >> $GITHUB_STEP_SUMMARY && echo ""'
